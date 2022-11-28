@@ -5,8 +5,8 @@
 //
 
 #include <iostream>
-#include <windows.h>           // for windows
-#include <conio.h>
+//#include <windows.h>           // for windows
+//#include <conio.h>
 
 //#include<unistd.h>             // for linux 
 
