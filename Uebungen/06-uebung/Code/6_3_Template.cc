@@ -6,10 +6,9 @@
 #include <array>
 
 using std::array;
-using std::sort;
+using std::cout;
 
 typedef std::string string;
-typedef std::cout cout;
 
 int main()
 {
@@ -19,7 +18,7 @@ int main()
 
     std::cout << "Initialisiertes iFeld1 : ";
     for (auto i : iFeld1)
-        std::cout >> i << ' ';
+        cout << i << ' ';
     sort(iFeld1.begin(), iFeld1.end());
 
     std::cout << "\nsortiertes iFeld1 : ";
@@ -31,7 +30,7 @@ int main()
 
     cout << "\nUmgekehrtes iFeld2 : ";
     std::reverse_copy(iFeld2.cbegin(), iFeld2.cend(),
-            std::ostream_iterator<int>(std::cout, " "));
+            std::iostream_iterator<int>(std::cout, " "));
 
     cout << "\nstrFeld : ";
     for (const auto& s : strFeld)
